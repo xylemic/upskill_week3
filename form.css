@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 80%;
+  padding: 3rem;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+  border: 2px solid #660000;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.user-input {
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+select {
+  width: 100%;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #660000;
+}
+
+input:not([type='checkbox']):not([type='text']):not([type='number']):not(
+    [type='tel']
+  ):not([type='email']),
+radio {
+  accent-color: #660000;
+  /* margin-right: 10px; */
+}
+
+input:not([type='radio']):not([type='text']):not([type='number']):not(
+    [type='tel']
+  ):not([type='email']),
+checkbox {
+  display: inline;
+  vertical-align: middle;
+  accent-color: #660000;
+  margin-right: -6px;
+}
+
+.check-label {
+  display: inline;
+  vertical-align: middle;
+}
+
+textarea {
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 20px 0;
+}
+
+button {
+  font-size: 1rem;
+  margin: 2rem 0;
+  background-color: #660000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: white;
+  color: #660000;
+}
+
+.comms {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%; /* Adjust for smaller screens */
+    padding: 2rem; /* Adjust for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 95%; /* Adjust for smaller screens */
+    padding: 1rem; /* Adjust for smaller screens */
+  }
+}
+
+fieldset {
+  border: 2px solid #660000;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
