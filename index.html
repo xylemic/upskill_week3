@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genesys Upskill Survey Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h1>Genesys Upskill Survey Form</h1>
+    <div class="wrapper">
+      <form action="" required>
+        <fieldset>
+          <legend>Your contact information</legend>
+          <label for="name">Your name </label>
+          <input
+            class="user-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Doe"
+          />
+          <label for="phone">Phone number</label>
+          <input
+            class="user-input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+234-xxx-xxxx-xxx"
+          />
+          <label for="email">Email</label>
+          <input
+            class="user-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="youremail@domain.com"
+          />
+          <label for="age">Your age</label>
+          <input
+            class="user-input"
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter your age"
+            min="1"
+            max="50"
+          />
+          <label for="occupation">Which option best describes you?</label>
+          <select name="occtype" id="occtype">
+            <option selected>Select one</option>
+            <option value="student">Student</option>
+            <option value="professional">Working Professional</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="it">IT Professional</option>
+            <option value="entrepreneur">Entrepreneur</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Feedback Section</legend>
+          <p>Would you recommend Genesys Upskill to a friend?</p>
+          <label> <input type="radio" name="choice" value="yes" />Yes </label>
+          <label> <input type="radio" name="choice" value="no" />No </label>
+          <label>
+            <input type="radio" name="choice" value="maybe" />Maybe
+          </label>
+          <p>Languges and Frameworks known (Check all that apply)</p>
+          <input type="checkbox" name="c" id="c" />
+          <label class="check-label" for="c">C</label>
+
+          <div class="check-container">
+            <input
+              type="checkbox"
+              name="c++"
+              id="c++"
+              style="display: inline"
+            />
+            <label for="c++" style="display: inline">C++</label>
+          </div>
+          <div>
+            <input type="checkbox" name="c#" id="c#" />
+            <label class="check-label" for="c#">C#</label>
+          </div>
+          <div>
+            <input type="checkbox" name="java" id="java" />
+            <label class="check-label" for="java">Java</label>
+          </div>
+          <div>
+            <input type="checkbox" name="python" id="python" />
+            <label class="check-label" for="python">Python</label>
+          </div>
+          <div>
+            <input type="checkbox" name="javascript" id="javascript" />
+            <label class="check-label" for="javascript">JavaScript</label>
+          </div>
+          <div>
+            <input type="checkbox" name="react" id="react" />
+            <label class="check-label" for="react">React</label>
+          </div>
+          <div>
+            <input type="checkbox" name="angular" id="angular" />
+            <label class="check-label" for="angular">Angular</label>
+          </div>
+          <div>
+            <input type="checkbox" name="django" id="django" />
+            <label class="check-label" for="django">Django</label>
+          </div>
+          <div>
+            <input type="checkbox" name="sprint" id="sprint" />
+            <label class="check-label" for="sprint">Sprint</label>
+          </div>
+          <label class="comms" for="comments"
+            >Any comments or suggestions?</label
+          >
+          <textarea name="comments" id="comments"></textarea>
+          <label>
+            <input type="checkbox" value="subscribe" name="subscribe" />
+            Add me to your email list!
+          </label>
+        </fieldset>
+      </form>
+      <button type="submit">Submit</button>
+    </div>
+  </body>
+</html>
